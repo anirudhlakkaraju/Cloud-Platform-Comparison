@@ -30,11 +30,11 @@ wandb.login()
 
 
 config = dict(
-    epochs=5,
+    epochs=30,
     classes=10,
     kernels=[16, 32],
-    batch_size=128,
-    learning_rate=0.005,
+    batch_size=256,
+    learning_rate=0.0005,
     dataset="MNIST",
     architecture="CNN")
 
