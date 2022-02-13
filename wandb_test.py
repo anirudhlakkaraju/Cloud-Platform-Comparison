@@ -6,7 +6,7 @@ import torch
 import torch.nn as nn
 import torchvision
 import torchvision.transforms as transforms
-from tqdm.notebook import tqdm
+from tqdm import tqdm
 
 # Ensure deterministic behavior
 torch.backends.cudnn.deterministic = True
@@ -43,7 +43,7 @@ config = dict(
 def model_pipeline(hyperparameters):
 
     # tell wandb to get started
-    with wandb.init(project="codebert", entity="anirudhlakkaraju", config=hyperparameters):
+    with wandb.init(project="platform tester", entity="anirudhlakkaraju", config=hyperparameters):
       # access all HPs through wandb.config, so logging matches execution!
       config = wandb.config
 
