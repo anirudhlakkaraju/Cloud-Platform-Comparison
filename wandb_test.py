@@ -151,11 +151,11 @@ def train(model, loader, criterion, optimizer, config):
 def train_batch(images, labels, model, optimizer, criterion):
     images, labels = images.to(device), labels.to(device)
     
-    # Forward pass ➡
+    # Forward pass 
     outputs = model(images)
     loss = criterion(outputs, labels)
     
-    # Backward pass ⬅
+    # Backward pass 
     optimizer.zero_grad()
     loss.backward()
 
