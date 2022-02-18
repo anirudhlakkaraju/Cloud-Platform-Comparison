@@ -1,4 +1,4 @@
-## Summary of Cloud Platforms
+## Comparing Cloud Platforms
 ### Google Colab (Free Tier)
 #### Pros:
 * GPU specs: 12 GB Nvidia K80.
